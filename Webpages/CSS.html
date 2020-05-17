@@ -1,0 +1,154 @@
+<html>
+<head>
+<title> Learning CSS </title>
+<link rel="stylesheet" type="text/css" href="result.css">
+</head>
+<body>
+<h1> Lets learn CSS. </h1>
+<div id="a"><a href="HTML.html"> Click here to move to HTML page </a></div>
+<h2> CSS stands for Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web. It is a simple design language intended to simplify the process of making web pages presentable.
+</h2>
+<h3> CSS defines the style of HTML. for eg. <br>
+<ul>
+<li>make all text purple</li>
+<li>give the second image a yellow border</li></ul>
+CSS is basically the adjectives of a webpage or skin to HTML skeleton .</h3>
+<div id="sp">
+<p>
+There are three ways to write css styles either Inline or using the style tag or separating css and html.<br><br>
+eg. of inline is  :<br>
+h3 style ="property : value;"<br><br>
+eg. of style tag is :<br>
+style type="text/css"<br>
+selector <br>{<br>property : value;<br> }
+<br>
+We can write our CSS either in the same html file or different css file.<br>
+It is always better to separate our html and css .<br>CSS is nested in the same html file using the style tag or writing inline as we saw above .<br>
+We can separate the html and css part and use a link tag to connect them .<br>
+eg.  <br>
+link rel="stylesheet" type="text/css" href="name of css file" </p></div>
+
+
+<p id="ma">CSS Selectors </p>
+<p>CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute and more.</p>
+
+<p class="one">The element Selector </p>
+<p class="ot">The element selector selects elements based on the element name.
+You can select all elements on a page or some specific elements .  eg.  <br><br>
+h1 {<br>
+	      background: pink; <br>
+	      border: 2px solid black;  <br>
+	}   <br>
+
+This will set the background of heading 1 to be pink and a black border of 2px black color .
+</p>
+<p class="two">The id Selector </p>
+<p class="tt">The id selector uses the id attribute of an HTML element to select a specific element.
+The id of an element should be unique within a page, so the id selector is used to select one unique element!
+To select an element with a specific id, write a hash (#) character, followed by the id of the element. <br>
+The id for the paragraph is considered as "special" eg. <br> <br>
+
+#special { <br>
+font-family: Arial;   <br>
+font-size: 20px;  <br>
+background: #FFA07A; <br>
+} <br>
+</p>
+
+<p class="three">The class Selector</p>
+<p class="tht">The class selector selects elements with a specific class attribute.
+To select elements with a specific class, write a period (.) character, followed by the name of the class.
+In the example below, all HTML elements with class="center" will be red and center-aligned: <br><br>
+.center {<br>
+color: red;<br>
+text-align: center; <br>
+}  <br></p>
+
+<p class="four">Star Selector</p>
+<p class="ft">The star selector selects everything in the webpage and gives a general style to it.   eg.<br>
+* { <br>
+font-family: Calibri; <br>
+color : blue;	<br>
+} <br>
+This will set the whole text of the page to be blue and of the above style .</p>
+
+<p class="five">Rational Selectors</p>
+<div class="fit">
+<p>Rational Selectors targets elements based on their relationship with another elements. eg .</p>
+<p>Descendant Selector : eg. <br><br>
+div p {<br>color : blue; <br>}<br>
+This targets all p tags that are descendent (child, grandchild, great-grandchild, and so on) of div tag.</p>
+<p>Adjacent Sibling Selector : eg. <br><br>
+h4 + p { <br> text-align: right;<br>} <br>
+This selector matches p tag next to h4 and both sharing same parent. This means p should come directly after h4. </p>
+<p>General Sibling Selector : eg. <br> <br>
+h2~p { <br> border: 2px solid blue;<br>} <br>
+This selector matches all p elements exactly after h2 element. </p></div>
+
+
+<p class="six">Attribute Selectors </p>
+<div class="st">
+<p>They targets matching elements based on their attributes and attributes value. Attribute Selectors are used in Brackets []. <br> eg .</p><br><br>
+a[href="style.css"] { <br> background: yellow; <br> } <br>
+<p>This will give a yellow background to the anchor tag .<br>
+div { <br>class^="col" <br>}<br></p>
+<p>This selector matches only div element with class value starting exactly with "col" . </p>
+<p>div{ <br>class$="wrap"<br> }<br>
+This selector matches only element div with class ending exactly with "wrap" . </p>
+<p>div{ <br>class*="md" <br> }<br>
+<p>This selector matches only element div with class that contains the substring "md" . </p></div>
+<p class="seven">Pseudo Selectors </p>
+<div class="set">
+<p>CSS Pseudo Selectors are classified in Pseudo Class and pseudo elements. CSS Pseudo Selectors are called using Colon : .Pseudo elements are called using double colon :: </p>
+<p>There are currently seven pseudo-elements in CSS. They are:
+<br>
+::after<br>
+::before<br>
+::first-letter<br>
+::first-line<br>
+::marker<br>
+::placeholder<br>
+::selection<br></p>
+<p> eg . <br><br> h3:hover<br>{<br>color: blue;<br>}<br>h3 will change to a different color when hovered over .<br><br>
+a:visited<br>{<br>color: gray;<br>}<br>When the anchor tag links are visited they will turn grey .</p>
+<p>
+<p>#special::after {<br>
+ content: “ — 1”;<br>
+ color: blue;<br>
+}<br>The string is added after the paragraph with id special and their colors are updated .</p><br></div>
+<p id="none"> The attributes that we use inside selectors are : </p><br>
+<div id="last">
+<p>color : It sets the color of the text in the element . eg. </p>
+<p> color: blue;</p>
+
+<p>background : It sets the background color for the particular element . eg. </p>
+<p> background: pink;</p>
+<p>The background can also be added using a url like . <br> background: url(link address);  eg .</p> 
+<p> background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHB);
+<p>border : It forms a border around the element with particular width and color and design . eg .</p>
+<p> border: 2px dashed black;</p>
+<p>padding : It sets the vertical distance between the border and the text within . eg .</p>
+<p> padding: 20px; </p>
+
+<p>font-family : It helps us to choose which font style do we want to use for our text .Font styles can also be added in CSS using Google Fonts .</p>
+<p> eg. <br>font-family: Verdana;</p>
+<p>font-size: It specifies the font size . eg. </p>
+<p> font-size: 20px;</p>
+<p>text-align: It describes the alignment of the text in the paragraph . eg . </p>
+<p>text-align: right;</p>
+
+<p>line-height: It specifies the distance between two lines in a paragraph .eg. </p>
+<p>line-height: 1.2px;</p>
+<p>margin : It sets the vertical distance between the border and the text within and the overall alignment of the border . There are more attributes like margin-left , margin-bottom , margin-right , margin-top .</p>
+<p>eg. <br> margin: 20px auto;</p>
+<p>text-transform: uppercase : It transforms all the text into uppercase.</p> 
+<p>text-transform: lowercase : It transforms all the text into lowercase.</p>
+<p>text-transform: capitalize : It transforms the first letter of the text into uppercase.</p>  
+<p>text-decoration: The text-decoration property specifies the decoration added to text .It can be overline, line-through, underline, underline overline or any other such attribute .</p>
+<p>Similar to the selector, there are lot many attributes that help us to style pages .</p>
+
+</div>
+
+
+</body>
+</html>
